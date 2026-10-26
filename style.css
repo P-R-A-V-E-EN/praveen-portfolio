@@ -44,3 +44,19 @@
   .profile-card{max-width:340px}
   .profile-ring{width:190px;height:190px}
 }
+.btn.ghost {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #0f172a;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.ghost:hover {
+    background: #0f172a;
+    color: #ffffff;
+}
