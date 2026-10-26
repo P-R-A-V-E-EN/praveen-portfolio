@@ -91,3 +91,84 @@
         max-width: 100%;
     }
 }
+/* ===== Layout Balance Fix ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrap {
+    width: min(1100px, calc(100% - 40px));
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* About section */
+#about .wrap {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Skills and Projects */
+#skills .wrap,
+#projects .wrap,
+#education .wrap,
+#contact .wrap {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* Make project/skill content use available space */
+.skills {
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+}
+
+/* Education cards */
+#education .wrap {
+    width: min(1100px, calc(100% - 40px));
+}
+
+/* Contact section */
+#contact .wrap {
+    width: min(1100px, calc(100% - 40px));
+}
+
+/* Footer */
+footer {
+    width: 100%;
+}
+
+footer .wrap.foot {
+    width: min(1100px, calc(100% - 40px));
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Mobile / smaller screens */
+@media (max-width: 800px) {
+
+    .wrap,
+    #skills .wrap,
+    #projects .wrap,
+    #education .wrap,
+    #contact .wrap,
+    footer .wrap.foot {
+        width: calc(100% - 30px);
+        max-width: none;
+    }
+
+}
