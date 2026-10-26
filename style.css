@@ -172,3 +172,75 @@ footer .wrap.foot {
     }
 
 }
+/* ===== FINAL RESPONSIVE LAYOUT FIX ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrap {
+    width: 92%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep sections balanced */
+section {
+    width: 100%;
+}
+
+/* Contact / Education layout */
+.contact,
+.education {
+    width: 100%;
+}
+
+.contact .wrap,
+.education .wrap {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 60px;
+}
+
+footer .wrap {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Prevent images from creating horizontal scroll */
+img {
+    max-width: 100%;
+}
+
+/* Mobile / smaller screens */
+@media (max-width: 800px) {
+
+    .wrap {
+        width: 90%;
+    }
+
+    .contact .wrap,
+    .education .wrap,
+    footer .wrap {
+        width: 90%;
+    }
+}
